@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+    
+img{
+	width:75%;
+}
+
+
+-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #CCC;
+}
+webkit-scrollbar {
+    width: 7px;
+    background-color: #CCC;
+}
+
+span, a {
+    display: inline-block;
+  }
+  a, input, button, span {
+    display: block;
+  }
+  a, button, input [type="submit"] {
+    -webkit-appearance: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  a, a:active, a:focus {
+    color: #000;
+  }
+  a, button {
+    outline: none;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  span, a {
+    display: inline-block;
+  }
+  a, input, button, span {
+    display: block;
+  }
+  a, button, input [type="submit"] {
+    -webkit-appearance: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  a, a:active, a:focus {
+    color: #000;
+  }
+  a, button {
+    outline: none;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .banner_content .banner_content_name {
+    min-height: 36px;
+    text-align: center;
+    line-height: 36px;
+  }
+  * {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  elemento {
+    background-image: url(Img/7191e86e-0025-11e8-95fb-0cc47adf23e6.jpg?isSmall=small);
+  }
+  .banner_content .banner_content_image {
+    margin: 7px auto;
+    border-radius: 5px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 230px;
+  }
+		body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-gap: 0.15em;
+  grid: 'header' auto
+        'nav' auto
+        'main' 1fr
+        'pg ' auto
+        'footer' auto
+      / 1fr; 
+       overflow-y: scroll;
+       /*background: whitesmoke*/;
+}
+
+.wraper {
+    min-height: calc(100vh - 57px);
+  }
+
+@media (min-width: 40em) {
+  body {
+    grid: 'header header' auto
+          'nav main' 1fr
+          'nav pg' 100px
+          'footer footer' auto
+        / 12em 1fr;
+       
+  }
+
+}
+
+
+
+
+@media all and (max-width: 1210px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+/*.pg{
+	width: 100%;
+}*/
+}
+
+
+@media all and (min-width: 1211px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+
+}
+
+
+
+
+
+
+@media all and (max-width: 1048px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+.pg {
+	grid-area: pg;
+	
+}
+footer { grid-area: footer; }
+
+
+
+
+/*.item{
+	-webkit-box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);
+-moz-box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);
+box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);
+border-radius: 60px 60px 60px 60px;
+-moz-border-radius: 60px 60px 60px 60px;
+-webkit-border-radius: 60px 60px 60px 60px;
+border: 6px outset #872f87;
+background-color: lightgrey;
+text-align: center;
+font-weight: 300;
+font-family: sans-serif;
+}*/
+
+
+
+/*.items {
+    display:inline-flex;
+
+
+}*/
+
+
+
+
+/* show… */
+body {
+
+
+}
+
+.pg,
+header,
+nav,
+main,
+footer {
+ 
+  padding: 1em;
+  border: 6px solid hsla(51,70%,60%,.5);
+/*background: white;*/
+background-clip: padding-box;
+  border-radius: 9px;
+  /*border: 6px solid hsla(0,0%,100%,.5);*/
+
+}
+.footer {
+    background: url('../img/nav.jpg');
+    border-top: 3px solid #a7c02f;
+  }
+  .wraper > div > div, .footer > div > div {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  .footer-menu {
+    margin: 0 13px 0 0;
+    overflow: auto;
+  }
+
+h1 {
+  font-family: sans-serif;
+  background: darkorchid;
+}
+
+
+input[type="submit"]{
+
+
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 0;
+   line-height: 0;
+   color: #000000;
+   font-family: Helvetica;
+   width:60%;
+   font-size: 16px;
+   font-weight: 100;
+   padding: 19px;
+   background-color: #F0F63D;
+   -webkit-box-shadow: inset 1px 0 5px 0 #FFAE00;
+   -moz-box-shadow: inset 1px 0 5px 0 #FFAE00;
+   box-shadow: inset 1px 0 5px 0 #FFAE00;
+   border: inset #DD380D 3px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+input[type="submit"]:hover {
+   background: #34F764;
+   border: inset #FFAE00 4px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+input[type="number"] {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    padding: 0 15px;
+    vertical-align: middle;
+    width: 195px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+html {
+    background: transparent;
+  }
+  html {
+    background-color: #e3e3e3;
+  }
+  * {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'calibri', sans-serif;
+    color: #000;
+    overflow-y: scroll;
+  }
+  * {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .wraper > div {
+}
+.menu {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0;
+  position: relative;
+  background: url('../img/nav.jpg');
+  border-bottom: 3px solid #a7c02f;
+}
+.wraper > div > div, .footer > div > div {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  .sacNav {
+    width: 100% !important;
+    background: #050505;
+  }
+  .navbarTop {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  .navbarTop .left, .navbar .left {
+    float: left;
+  }
+  .left {
+    float: left;
+  }
+  .navbarTop li.sep {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .navbarTop li {
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .left_sidebar {
+    float: left;
+    width: 265px;
+    min-height: 1px;
+  }
+  .center_content {
+    width: calc(100% - 270px);
+    float: left;
+    padding-left: 10px;
+  }
+
+  .item {
+    background: #f9f9f9;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    border-radius: 2px;
+    margin: 0 0.5% 10px;
+    border: 1px solid #dedede;
+    box-shadow: 2px 4px 3px -2px rgba(105, 105, 105, 0.49);
+  }
+  </style>
+    </head>
+<body>
+ <div class="wraper">
+        <div class="menu">
+            <div class="sacNav">
+               <div>
+                  <ul class="navbarTop">
+                     <div class="left">
+  <li><a href="index.html">home</a></li>
+                        <li class="sep">|</li>
+                        <li><a href="os.html">Order Status</a></li>
+                        <li class="sep">|</li>
+                        <li><a href="ab.html"About</a></li>
+  
+         </div>
+                     <div class="flclear"></div>
+                  </ul>
+               </div>
+            </div>
+   <ul class="navbar first">
+                  <div class="left"><a href="/" class="logo"><span><img src="/img/logo png.png" alt="">Store</span></a></div>
+                  <div class="right">
+                     <li class="auth"><a href="/visitor-registration.html"><span>Registrarse</span></a></li>
+                     <li class="auth"><a href="/visitor-authorize.html"><span>Inicio</span></a></li>
+                     <div class="flclear"></div>
+                     <div style="text-align: center;"></div>
+                  </div>
+                  <div class="flclear"></div>
+               </ul>
+            </div>
+         </div>
+   <ul class="navbar first">
+                  <div class="left"><a href="/" class="logo"><span><img src="/img/logo png.png" alt="">Store</span></a></div>
+                  <div class="right">
+                     <li class="auth"><a href="/visitor-registration.html"><span>Registrarse</span></a></li>
+                     <li class="auth"><a href="/visitor-authorize.html"><span>Inicio</span></a></li>
+                     <div class="flclear"></div>
+                     <div style="text-align: center;"></div>
+                  </div>
+                  <div class="flclear"></div>
+               </ul>
+            </div>
+         </div>
+
+<div class="wraper">
+<nav class="left_sidebar">
+  <h2>Shop By Category</h2>
+  <ul style="text-decoration:none;">
+    {% for cat in cats %}
+    <li style="background-color:#f1f1f1;border-radius:15px;color:black;margin:4px 4px 4px 4px;padding:5px 5px 5px 5px;"><a href="/index?category={{cat['category_name']}}">{{cat['catId']}} - {{ cat['category_name'] }}</a></li>
+    {% endfor %}
+</ul>
+</nav>
+<main class="center_content">
+ 	<div class="items banners">
+		
+			
+            {% for post in posts %}
+            <div class="banner_item">
+            <a href="#">
+                <h4>{{ post['itemName'] }}</h4>
+            </a>
+        <img src="/static/img/{{ post['image_path'] }}" width="300" height="300" />
+           
+               
+                <p style="border:1px solid #45f">{{ post['itemDescription']}}</p>
+                <span class="badge badge-primary">{{ post['itemcreated'] }}</span>
+                
+            </div>
+           
+    {% for post in posts %}
+     <div class="banner_item">
+                <div class="banner_wrapper">
+                   <a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+                      </a><div class="banner_content"><a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+                         <div class="banner_content_name">
+                            <p>{{ post['itemName'] }}</p>
+                         </div>
+                         <div class="banner_content_image" style="background-image: url(/static/img/{{ post['image_path'] }}?isSmall=small)"></div>
+                         </a><p class="marketName"><a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+                   </a><a href="/market/gh">{{ post['itemDescription']}}</a></p> </div>  
+                   <a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+                      <div class="buy">
+                         <form action="/visitor-authorize.html" onsubmit="alert( 'you need to register for continue shoppping!' );" method="get">
+                            <input name="iGoodsID" type="hidden" value="608"> <input name="iCategoryID" type="hidden" value="669"> 
+                            <div class="city">
+                               <p><span>{{ post['itemcreated'] }} </span></p>
+                            </div>
+                            <div class="price2">
+                               
+                               <p>price: {{ post['itemPrice'] }} €</p>
+                            </div>
+                         </form>
+                      </div>
+                   </a>
+                </div>
+             </div>
+		  {% endfor %}
+    
+    <div class="paddingthree">
+                     <form action="#thread" method="post"> <span class="active">1</span> <button name="iPage" value="1">2</button> <button name="iPage" value="2">3</button> <button name="iPage" value="3">4</button> <button name="iPage" value="4">5</button> <button name="iPage" value="5">6</button> <button name="iPage" value="6">7</button> <button name="iPage" value="7">8</button> <button name="iPage" value="8">9</button> <button name="iPage" value="9">10</button> <button name="iPage" value="10">11</button> <button name="iPage" value="11">12</button> <button name="iPage" value="12">13</button> </form>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    
+    </body>
+  </html>
