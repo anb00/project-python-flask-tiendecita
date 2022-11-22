@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+   
+    {% block content %} 
+   
+
+      {% for post in posts %}
+
+<div class="banner_item">
+    <div class="banner_wrapper">
+       <a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+          <div class="banner_content">
+             <div class="banner_content_name">
+                <p>#{{ post['itemId'] }}</p>
+             </div>
+             <div class="banner_content_image" style="background-image: url(/static/img/{{ post['image_path'] }}?isSmall=small)"></div>
+             <p class="marketName">
+       <a href="/market/BM320">{{ post['itemName'] }}</a></p> </div> </a> 
+       <a style="width: 100%; height: 100%; display: block;" href="/visitor-authorize.html">
+          <div class="buy">
+             <form action="/visitor-authorize.html" onsubmit="alert( 'Register or login for continue uying!' );" method="get">
+                <input name="iGoodsID" type="hidden" value="608" /> <input name="iCategoryID" type="hidden" value="669" /> 
+                <div class="city">
+                   <p><span> {{ post['itemDescription']}} </span></p>
+                </div>
+                <div class="price2">
+                   <p>seller:{{ post['sellerName'] }}</p>
+                   <p>price:{{ post['itemPrice'] }}EUR</p>
+                </div>
+             </form>
+          </div>
+       </a>
+    </div>
+</div>
+
+    {% endfor %}
+   
+  
+
+
+
+
+{% endblock %}

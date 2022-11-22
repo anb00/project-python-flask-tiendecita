@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if category %}
+  <h1>Displaying {{ category }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+<hr>
+
+<div style="display:grid;
+grid-template-columns: auto auto auto auto;">
+
+    {% for p in rows %}
+    <div class="i">
+    <a href="#">
+        <h4>{{ p['itemName'] }}</h4>
+    </a>
+<img src="/static/img/{{ p['image_path'] }}" width="300" height="300" />
+   
+       
+        <p style="border:1px solid #45f">{{ p['itemDescription']}}</p>
+        <span class="badge badge-primary">{{ p['itemcreated'] }}</span>
+        
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

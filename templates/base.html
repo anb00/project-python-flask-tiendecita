@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title>{% block title %} {% endblock %}</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/extra.css') }}">
+ 
+      <style type="text/css">
+         html{
+            background:transparent;
+         }
+
+      /*   li{
+            background-color: grey;
+            color: white !important;
+            font-size: 0;
+         }
+         li:hover{
+            background: transparent;
+         }*/
+         .banner_item{
+            border-radius: 13px;
+            border: none;
+            box-shadow: none;
+            background-color: lightgrey;
+         }
+      </style>
+   </head>
+
+    <body>
+
+        <div class="wraper">
+            <div class="menu" style="height: 285px;background: url(Img/wallhaven-g81kgd.jpg)48% 50%;border-bottom: 3px solid lime;">
+               <div class="blackNav" style="background:white;">
+                  <div >
+                   
+                     <ul class="navbarTop" >
+
+                        <div class="left" style="left:30%;">
+                           <li><li><a  href="index.html">Home</a></li>
+                           <li class="sep" style="text-decoration: bold;">·</li>
+                           <li><a  href="Stats.html">Order</a></li>
+                           <li class="sep">·</li>
+                           <li><a  href="Contacto.html">Contact</a></li>
+                           <li class="sep">·</li>
+                           <li><a href="" target="_blank">About</a></li>
+                           <li class="sep">·</li>
+                           <li><a href="" target="_blank">FAQ</a></li>
+                           <li class="sep">·</li>
+                           <li><a style="color: #8a2be2" href="Outlet.html">Outlet</a></li></li>
+   
+                        </div>
+                        <div class="right">
+                           <li>Login/Register</li>
+                    
+                        </div>
+                        <div class="flclear"></div>
+                     </ul>
+   
+                  </div>
+   
+               </div>
+                <h3 style="text-align:center;font-family: Helvetica;font-weight: 600;color: white;font-size: 66px;margin-top: 117px;text-shadow: 1px 20px 10px rgb(13, 10, 10);">Site Title</h3>
+               <div>
+                  <ul class="navbar first">
+                     <div class="left"><a href='/' class="logo"><span><img src="/img/logo png.png" alt="">Multivendor</span></a></div>
+                     <div class="right">
+                        <!-- <li class="auth"><a href="/visitor-registration.html" ><span>Registrarse</span></a></li>
+                        <li class="auth"><a href="/visitor-authorize.html"><span>Inicio</span></a></li> -->
+                        <div class="flclear"></div>
+                        <div style="text-align: center;"></div>
+                     </div>
+                     <div class="flclear"></div>
+                  </ul>
+               </div>
+            </div>
+            <div class="content clear" id="ContentBar">
+               <div class="mainContent index">
+                <div class="left_sidebar">
+                    <form id="StoreForm" action="#thread" method="get">
+                       <input name="sCase" type="hidden" value="all" />
+                       <div class="sidebar_title"></div>
+                       <div class="wrap_checkbox">
+                          <div class="allProducts">Shop by category <small>(679)</small></div>
+                          <ul class="" style="text-decoration:none;padding: 0; 
+       margin: 0; 
+       list-style-type: none; 
+       position: relative;">
+                           
+                            
+                                {% for cat in cats %}
+                                <li ><a href="/index?category={{cat['category_name']}}">{{cat['catId']}} - {{ cat['category_name'] }}</a></li>
+                                {% endfor %}
+                             </li>
+                          </ul>
+                          <select name="iFirstLevel" class="city_check">
+                             <option name="iFirstLevel" class="autosubmit" value="0">City</option>
+                             <option name="iFirstLevel" id="iCategoryID_1681" class="autosubmit" value="1681">Madrid</option>
+
+              </select>
+              <input type="submit" form="StoreForm" class="search_submit" value="" />
+              <div class="flclear"></div>
+           </div>
+        </div>
+        <script type="text/javascript">$(function () {$('.autosubmit').bind('change', function () {var sFormID = $(this).attr('form');if (sFormID !== undefined && sFormID != '') {$('form[id="' + sFormID + '"]').submit();} else {$(this).closest('form').submit();}});});</script>
+        <div class="banners">
+           
+            {% block content %} {% endblock %}
+           
+           
+          
+        </div>
+        <div class="paddingthree">
+           <form action="#thread" method="post"> <span class="active">1</span> <button name="iPage" value="1">2</button> <button name="iPage" value="2">3</button> <button name="iPage" value="3">4</button> <button name="iPage" value="4">5</button> <button name="iPage" value="5">6</button> <button name="iPage" value="6">7</button> <button name="iPage" value="7">8</button> <button name="iPage" value="8">9</button> <button name="iPage" value="9">10</button> <button name="iPage" value="10">11</button> <button name="iPage" value="11">12</button> <button name="iPage" value="12">13</button> </form>
+           <div class="clear"></div>
+        </div>
+     </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+<div>
+  <div class="footer-menu">
+     <div class="foot_bottom">
+        <div class="copyr">&reg; </div>
+        <div class="course">
+           <p>Content footer</p>
+           <p>Content footer</p>
+        </div>
+        <div class="flclear"></div>
+     </div>
+  </div>
+</div>
+</div>
+
+<!--/div>
+</main>
+
+
+<div class="pg">Pagintion</div>
+<footer><h2>footer</h2></footer-->
+
+<!-- Optional JavaScript -->
+      
+</body>
+</html>

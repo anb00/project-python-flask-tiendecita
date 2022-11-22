@@ -1,0 +1,264 @@
+
+
+img{
+	width: 250px;
+    height: 250px;
+}
+
+
+-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+webkit-scrollbar {
+    width: 7px;
+    background-color: #fff;
+}
+
+
+
+		body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-gap: 0.15em;
+  grid: 'header' auto
+        'nav' auto
+        'main' 1fr
+        'pg ' auto
+        'footer' auto
+      / 1fr; 
+       overflow-y: scroll;
+       /*background: whitesmoke*/;
+}
+
+
+
+@media (min-width: 40em) {
+  body {
+    grid: 'header header' auto
+          'nav main' 1fr
+          'nav pg' 100px
+          'footer footer' auto
+        / 12em 1fr;
+        background: #000;
+  }
+
+}
+
+
+
+
+@media all and (max-width: 1210px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+/*.pg{
+	width: 100%;
+}*/
+}
+
+
+@media all and (min-width: 1211px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+
+}
+
+
+
+
+
+
+@media all and (max-width: 1048px){
+
+
+.items{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+.pg {
+	grid-area: pg;
+	background: white;
+}
+footer { grid-area: footer; }
+
+
+
+
+.item{
+    align-items: center;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    margin: 4px 4px 4px 4px;
+    background-color: rgba(250,255,250,0.5);
+    border-radius: 7px;
+    box-shadow: 0 8px 16px rgba(38,50,56,0.16),0 2px 5px -2px rgba(0,0,0,0.3),inset 0 2px 5px rgba(255,255,255,0.75),inset 0 -1px 3px rgba(0,0,0,0.2),0 0 1px rgba(0,0,0,0.5);
+
+	/*-webkit-box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);
+-moz-box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);
+box-shadow: -9px 7px 6px -4px rgba(7,8,6,0.65);*/
+/*border-radius: 60px 60px 60px 60px;*/
+/*-moz-border-radius: 60px 60px 60px 60px;
+-webkit-border-radius: 60px 60px 60px 60px;
+border: 6px outset #872f87;
+background-color: lightgrey;
+text-align: center;
+font-weight: 300;
+font-family: sans-serif;*/
+}
+
+
+
+/*.items {
+    display:inline-flex;
+
+
+}*/
+
+
+
+
+/* show… */
+body {
+/*  background: darkmagenta;*/
+background: white;
+}
+
+.pg,
+header,
+nav,
+main,
+footer {
+  background: hsla(255,95%,95%,.5);
+  padding: 1em;
+/*  border: 6px solid hsla(200,90%,90%,.5);*/
+/*background: white;*/
+background-clip: padding-box;
+  border-radius: 9px;
+  /*border: 6px solid hsla(0,0%,100%,.5);*/
+  
+}
+
+h1 {
+  font-family: sans-serif;
+  background:transparent;
+  color: black;
+}
+
+
+input[type="submit"]{
+
+
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 0;
+   line-height: 0;
+   color: #000000;
+   font-family: Helvetica;
+   width:60%;
+   font-size: 16px;
+   font-weight: 100;
+   padding: 19px;
+   background-color: #F0F63D;
+   -webkit-box-shadow: inset 1px 0 5px 0 #FFAE00;
+   -moz-box-shadow: inset 1px 0 5px 0 #FFAE00;
+   box-shadow: inset 1px 0 5px 0 #FFAE00;
+   border: inset #DD380D 3px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+input[type="submit"]:hover {
+   background: #34F764;
+   border: inset #FFAE00 4px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+input[type="number"] {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    padding: 0 15px;
+    vertical-align: middle;
+    width: 195px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+	

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Calibri-BoldItalic';
+    src: url('../fonts/Calibri-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Calibri-BoldItalic.svg#Calibri-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibriz';
+    src: url('../fonts/calibriz.eot');
+    src: url('../fonts/calibriz.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri-LightItalic';
+    src: url('../fonts/Calibri-LightItalic.ttf') format('truetype'),
+    url('../fonts/Calibri-LightItalic.svg#Calibri-LightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibrili';
+    src: url('../fonts/calibrili.eot');
+    src: url('../fonts/calibrili.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri-Light';
+    src: url('../fonts/Calibri-Light.ttf') format('truetype'),
+    url('../fonts/Calibri-Light.svg#Calibri-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibril';
+    src: url('../fonts/calibril.eot');
+    src: url('../fonts/calibril.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri-Italic';
+    src: url('../fonts/Calibri-Italic.ttf') format('truetype'),
+    url('../fonts/Calibri-Italic.svg#Calibri-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibrii';
+    src: url('../fonts/calibrii.eot');
+    src: url('../fonts/calibrii.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri-Bold';
+    src: url('../fonts/Calibri-Bold.ttf') format('truetype'),
+    url('../fonts/Calibri-Bold.svg#Calibri-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibrib';
+    src: url('../fonts/calibrib.eot');
+    src: url('../fonts/calibrib.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.ttf') format('truetype'),
+    url('../fonts/Calibri.svg#Calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibri';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

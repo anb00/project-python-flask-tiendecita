@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   
+
+
+
+
+   
+
+
+
+{% for x in data %}
+<div class="item" style="text-align:center;">
+<a href="#">
+    <h4>{{ x[1] }}</h4>
+</a>
+<img src="/static/img/{{x[4] }}" width="300" height="300" /><br>
+   <i class="panel    ">sadasdasdad</i>
+    <p ><i class="fas fa-solar-panel    "></i>{{ x[3]}}</p>
+    <span class="badge badge-secondary">Seller:{{ x[9] }} </span><br>
+    <h2 class="badge badge-primary">{{ x[2] }} €</h2>
+    
+</div>
+{% endfor %}
+
+
+
+
+
+{% endblock %}

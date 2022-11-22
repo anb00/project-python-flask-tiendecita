@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   
+{% for p in post %}
+<div class="item">
+<a href="#">
+    <h4>/{{ p['itemName'] }}</h4>
+</a>
+<img src="/static/img/{{ p['image_path'] }}" width="300" height="300" />
+
+   
+    <p style="border:1px solid #45f">{{ p['itemDescription']}}</p>
+    <span class="badge badge-primary">{{ p['itemcreated'] }}</span>
+    <h2>{{p['itemPrice']}} €</H2>
+    
+</div>
+{% endfor %}
+
+
+    
+    {% for post in posts %}
+    <div class="item">
+    <a href="#">
+        <h4>#{{ post['itemName'] }}</h4>
+    </a>
+<img src="/static/img/{{ post['image_path'] }}" width="300" height="300" />
+   
+       
+        <p style="border:1px solid #45f">{{ post['itemDescription']}}</p>
+        <span class="badge badge-primary">{{ post['itemcreated'] }}</span>
+        <h4>{{ post['itemPrice'] }}€</h4>
+        <h3>{{ post['sellerName'] }}</h3>
+        <h4>{{ post['category_name'] }}</h4>
+       
+    </div>
+    {% endfor %}
+
+
+
+    {% for post in rows %}
+    <div class="item">
+    <a href="#">
+        <h4>¡{{ itemName}}</h4>
+    </a>
+<img src="/static/img/{{ post['image_path'] }}" width="300" height="300" />
+   
+       
+        <p style="border:1px solid #45f">{{ post['itemDescription']}}</p>
+        <span class="badge badge-primary">{{ post['itemPrice'] }}€</span>
+        <h2 class="badge badge-primary">{{ x[2] }} €</h2>
+        
+    </div>
+    {% endfor %}
+
+
+
+{% endblock %}
